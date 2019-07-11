@@ -1,1 +1,14 @@
-{{yield}}
+<h2>{{@title}}</h2>
+<ul>
+  {{#each @people as |person|}}
+    <li>{{person}}</li>
+  {{/each}}
+</ul>
+
+{{!-- this is not in ember. does it improve readability?
+<ul>
+  {{#map @title person}}
+    <li>{{person}}</li>
+  {{/map}}
+</ul>
+--}}

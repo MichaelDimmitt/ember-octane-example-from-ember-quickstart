@@ -1,14 +1,1 @@
-<h2>List of Scientists</h2>
-<ul>
-  {{#each this.model as |scientist|}}
-    <li>{{scientist}}</li>
-  {{/each}}
-</ul>
-
-{{!-- this is not in ember. does it improve readability?
-<ul>
-  {{#map this.model scientist}}
-    <li>{{scientist}}</li>
-  {{/map}}
-</ul>
---}}
+<PeopleList @title="List of Scientists" @people={{this.model}} />
