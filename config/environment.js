@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   let ENV = {
-    modulePrefix: 'ember-quickstart',
+    modulePrefix: 'ember-octane-example-from-ember-quickstart',
     environment,
     rootURL: '/',
     locationType: 'auto',
