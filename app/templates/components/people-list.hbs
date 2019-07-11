@@ -1,4 +1,10 @@
-<h2>{{@title}}</h2>
+<h2>{{this.greeting}}{{@title}}</h2>
+
+<select {{on 'change' (fn this.updateLanguage)}}>
+  <option value="en">English</option>
+  <option value="de">German</option>
+  <option value="sp">Spanish</option>
+</select>
 <ul>
   {{#each @people as |person|}}
     <li>
